@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS, JavaScript</title>
+    <meta name="description" content="A semantic HTML webpage">
+    <meta name="author" content="John Doe">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Semantic Webpage</h1>
+    <nav>
+        <ul>
+            <li><a href="#photos">Lazy Slider</a></li>
+            <li><a href="#accordion">CSS Accordion</a></li>
+            <li><a href="#nativeDialog">Native Dialog</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!--  Lazy Slider  -->
+    <section id="photos">
+        <h2>Lazy Slider</h2>
+        <div class="slider">
+            <div class="slider__item">
+                <picture class="slider__picture">
+                    <img src="https://placehold.co/100x100" alt="Image 1" width="350" height="350" loading="lazy">
+                </picture>
+            </div>
+            <div class="slider__item">
+                <picture class="slider__picture">
+                    <img src="https://placehold.co/200x200" alt="Image 2" width="350" height="350" loading="lazy">
+                </picture>
+            </div>
+            <div class="slider__item">
+                <picture class="slider__picture">
+                    <img src="https://placehold.co/300x300" alt="Image 3" width="350" height="350" loading="lazy">
+                </picture>
+            </div>
+            <div class="slider__item">
+                <picture class="slider__picture">
+                    <img src="https://placehold.co/400x400" alt="Image 4" width="350" height="350" loading="lazy">
+                </picture>
+            </div>
+            <div class="slider__item">
+                <picture class="slider__picture">
+                    <img src="https://placehold.co/500x500" alt="Image 5" width="350" height="350" loading="lazy">
+                </picture>
+            </div>
+
+            <div class="slider__item">
+                <picture class="slider__picture">
+                    <img src="https://placehold.co/600x600" alt="Image 6" width="350" height="350" loading="lazy">
+                </picture>
+            </div>
+
+            <div class="slider__item">
+                <picture class="slider__picture">
+                    <img src="https://placehold.co/700x700" alt="Image 7" width="350" height="350" loading="lazy">
+                </picture>
+            </div>
+
+            <div class="slider__item">
+                <picture class="slider__picture">
+                    <img src="https://placehold.co/800x800" alt="Image 8" width="350" height="350" loading="lazy">
+                </picture>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Accordion  -->
+    <section id="accordion">
+        <h2>CSS Accordion (radio)</h2>
+        <div class="accordion">
+            <div class="accordion__item">
+                <input type="radio" name="accordion" class="accordion__input" id="radio1" checked>
+                <label class="accordion__title" for="radio1">Title 1</label>
+                <div class="accordion__content">
+                    Content 1
+                </div>
+            </div>
+            <div class="accordion__item">
+                <input type="radio" name="accordion" class="accordion__input" id="radio2">
+                <label class="accordion__title" for="radio2">Title 2</label>
+                <div class="accordion__content">
+                    Content 2
+                </div>
+            </div>
+            <div class="accordion__item">
+                <input type="radio" name="accordion" class="accordion__input" id="radio3">
+                <label class="accordion__title" for="radio3">Title 3</label>
+                <div class="accordion__content">
+                    Content 3
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>CSS Accordion (checkbox)</h2>
+        <div class="accordion">
+            <div class="accordion__item">
+                <input type="checkbox" name="accordion" class="accordion__input" id="checkbox1">
+                <label class="accordion__title" for="checkbox1">Title 1</label>
+                <div class="accordion__content">
+                    Content checkbox 1
+                </div>
+            </div>
+            <div class="accordion__item">
+                <input type="checkbox" name="accordion" class="accordion__input" id="checkbox2">
+                <label class="accordion__title" for="checkbox2">Title 2</label>
+                <div class="accordion__content">
+                    Content checkbox 2
+                </div>
+            </div>
+            <div class="accordion__item">
+                <input type="checkbox" name="accordion" class="accordion__input" id="checkbox3">
+                <label class="accordion__title" for="checkbox3">Title 3</label>
+                <div class="accordion__content">
+                    Content checkbox 3
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Native Dialog  -->
+    <section id="nativeDialog">
+        <h2>Native Dialog</h2>
+        <div class="dialog-box">
+            <button id="dialog-open-button">Open Dialog</button>
+            <dialog id="dialog">
+                <h3>Dialog Title</h3>
+                <p>Dialog content</p>
+                <button id="dialog-close-button">Close Dialog</button>
+            </dialog>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
